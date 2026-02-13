@@ -26,9 +26,9 @@ Arvore-Binaria/
 │
 ├── src/com.gabrielwederson.arvorebinaria
 │   ├── Arvore.java        # Implementação da árvore binária
-│   ├── Folha.java              # Representação do nó da árvore      
-├── teste
-│    ├── Main.java         #Zona de teste
+│   ├── Folha.java         # Representação do nó da árvore      
+├── teste/
+│    ├── Main.java         #Zona de teste de código
 └── README.md
 ```
 
@@ -36,8 +36,8 @@ Arvore-Binaria/
 
 ## Funcionalidades
 
-* Inserção de elementos na árvore
-* Busca de valores
+* Inserção de inteiros na árvore
+* Inserção de valores
 
 * Estrutura organizada separando:
 
