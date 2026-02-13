@@ -27,12 +27,14 @@ public class Arvore {
             if(novo.getValor() < this.folha.getValor()){
                 if(this.esquerda == null){
                     this.esquerda = arvorebinaria;
+                    System.out.println("Folha: " + novo.getValor() + " a esquerda de: " + this.folha.getValor());
                 } else {
                     this.esquerda.criar(novo);
                 }
             } else if (novo.getValor() > this.folha.getValor()){
                 if(this.direita == null){
                     this.direita = arvorebinaria;
+                    System.out.println("Folha: " + novo.getValor() + " a direita de: " + this.folha.getValor());
                 } else {
                     this.direita.criar(novo);
                 }
