@@ -15,5 +15,28 @@ public class Arvore {
         this.esquerda = null;
         this.direita = null;
     }
+    public boolean vazio(){
+        return folha == null;
+    }
 
+    public void criar(Folha novo){
+        if(vazio()){
+            this.folha = folha;
+        } else {
+            Arvore arvorebinaria = new Arvore(novo);
+            if(novo.getValor() < this.folha.getValor()){
+                if(this.esquerda == null){
+                    this.esquerda = arvorebinaria;
+                } else {
+                    this.esquerda.criar(novo);
+                }
+            } else if (novo.getValor() > this.folha.getValor()){
+                if(this.direita == null){
+                    this.direita = arvorebinaria;
+                } else {
+                    this.direita.criar(novo);
+                }
+            }
+        }
+    }
 }
